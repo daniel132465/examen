@@ -1,0 +1,93 @@
+/* Resetea márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y centrado del cuerpo */
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  background-color: #303030;
+  width: 320px;
+  border-radius: 16px;
+  padding: 25px;
+  gap: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tamaño y margen del título */
+.cabeza h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el texto de descripción */
+.cabeza p {
+  color: #b3b3b3;
+  font-size: 18px;
+}
+
+/* Disposición del contenedor superior */
+.Arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Estilo del icono */
+.icono img {
+  width: 24px;
+  border-radius: 50%;
+  float: right; /* Error: uso de float es obsoleto, mejor usar flexbox */
+}
+
+/* Estilo de la sección de descripción */
+.descripcion {
+  display: flex;
+  gap: 17px;
+}
+
+/* Estilo del porcentaje */
+.porcentaje {
+  color: #30925a;
+  font-size: 14px;
+}
+
+/* Estilo de la info adicional */
+.info {
+  color: #908d8d;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+/* Espacio extra antes del porcentaje */
+.porcentaje::before {
+  margin-right: 4px;
+}
+
+/* Estilo de la imagen circular */
+.imagen {
+  background-color: rgb(216, 197, 163);
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+/* Tamaño de la imagen */
+img {
+  width: 40px;
+}
